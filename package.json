@@ -1,0 +1,39 @@
+{
+  "name": "drorm-eds-ui1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "node wapp.js"
+  },
+  "dependencies": {
+    "@andresouzaabreu/vue-data-table": "^3.2.1",
+    "@revolist/vue3-datagrid": "^3.0.96",
+    "axios": "^0.21.1",
+    "connect-history-api-fallback": "^1.6.0",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "material-design-icons-iconfont": "^6.1.0",
+    "materialize-css": "^1.0.0",
+    "path": "^0.12.7",
+    "register-service-worker": "^1.7.1",
+    "uuidv4": "^6.2.10",
+    "vue": "^3.0.0",
+    "vue-materialize-datatable": "^1.0.4",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.4",
+    "@vue/cli-plugin-eslint": "^4.5.4",
+    "@vue/cli-service": "^4.5.4",
+    "@vue/compiler-sfc": "^3.0.0-rc.7",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-beta.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2"
+  }
+}
