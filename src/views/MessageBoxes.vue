@@ -66,6 +66,18 @@
                 <a class="waves-effect waves-light btn" v-on:click="confirm2_show"><i class="material-icons right">cloud</i>Confirm дизайн.</a>
             </div>
       </div>
+      <div class="row">
+            <div class="card-title">
+                <h4> Тестирование библиотеки sweetalert2, ./lib/messages.js  </h4>
+            </div>
+           <div class="card-action">
+                <a class="waves-effect waves-light btn" v-on:click="error_msg" ><i class="material-icons left">cloud</i>Error</a>
+                <a class="waves-effect waves-light btn" v-on:click="success_msg"><i class="material-icons right">cloud</i>Информационное</a>
+                <a class="waves-effect waves-light btn" v-on:click="warning_msg" ><i class="material-icons left">cloud</i>Предупреждение</a>
+                <a class="waves-effect waves-light btn" v-on:click="confirm_msg" ><i class="material-icons left">cloud</i>OK-Cancel</a>
+
+            </div>
+      </div>
 
     </form>
  
@@ -79,6 +91,7 @@ import MsgBasev from '@/components/messageboxes/MsgBasev';
 import ErrorMsg from '@/components/messageboxes/ErrorMsg';
 import InformationMsg from '@/components/messageboxes/InformationMsg';
 import ConfirmationMsg from '@/components/messageboxes/ConfirmationMsg';
+import { error_message, confirmation_message,success_message, warning_message  } from "@/lib/messages.js";
 
 export default {
     metaInfo() {
@@ -150,7 +163,42 @@ export default {
         confirm2_close(value){
             alert("Нажата кнопка = " + value);
             this.conf2_show = false;
-        }
+        },
+        async error_msg(){
+                    await error_message(
+                        "Внимание",
+                        "Ошибка при сохранении записи: " 
+                    );
+        },
+        async success_msg(){
+                    await success_message(
+                        "Внимание",
+                        "Запись успешно  добавлена: " 
+                    );
+        },
+        async warning_msg(){
+                    await warning_message(
+                        "Внимание",
+                        "Шото пошло не так " 
+                    );
+        },
+        async confirm_msg(){
+            const confirmationResponse = await confirmation_message(
+                                    `Вы подтверждаете выбор! . Продолжить?`
+            );
+
+
+            await success_message(
+                        "Внимание",
+                        "Сделан выбор: " + JSON.stringify( confirmationResponse ) 
+            );
+
+
+
+
+        },
+
+
 
 
     }
