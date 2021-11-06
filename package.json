@@ -19,6 +19,7 @@
     "materialize-css": "^1.0.0",
     "path": "^0.12.7",
     "register-service-worker": "^1.7.1",
+    "sweetalert2": "^11.1.9",
     "uuidv4": "^6.2.10",
     "vue": "^3.0.0",
     "vue-materialize-datatable": "^1.0.4",

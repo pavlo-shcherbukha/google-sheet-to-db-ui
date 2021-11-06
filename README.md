@@ -1,30 +1,23 @@
-# google-sheet-to-db-ui
-Продолжние google-sheet-to-db. К rest-api  добавил vue.js ui
-
-Для запуска локально нужно создать файл настройки env переменных: 
-
-.env.development 
-
-с примерно таким содержимым:
-
-```text
- # just a flag
-ENV = 'development'
-
-# base api
-VUE_APP_BASE_URL=http://nodesrv-pashakx-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com
-VUE_APP_USEPROXY=true
-VUE_APP_PROXYPORT=3128
-# vue-cli uses the VUE_CLI_BABEL_TRANSPILE_MODULES environment variable,
-# to control whether the babel-plugin-dynamic-import-node plugin is enabled.
-# It only does one thing by converting all import() to require().
-# This configuration can significantly increase the speed of hot updates,
-# when you have a large number of pages.
-# Detail:  https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/babel-preset-app/index.js
-
-VUE_CLI_BABEL_TRANSPILE_MODULES = true
+https://www.vuescript.com/vue-js-materialize-data-table-component/
+https://github.com/MicroDroid/vue-materialize-datatable
+https://github.com/MicroDroid/vue-materialize-datatable/tree/master/src
 
 
-```
 
-параметр VUE_APP_BASE_URL указывает на url rest api 
+
+https://www.npmjs.com/package/vue-materialize-datatable
+https://overcoder.dev/vue-materialize-datatable/
+
+
+
+
+https://www.npmjs.com/package/@revolist/vue3-datagrid
+https://github.com/revolist/vue3-datagrid
+https://codesandbox.io/s/revo-grid-vue3-thry7?file=/src/App.vue:836-865
+
+
+
+оформление таблицы:
+
+https://stackoverflow.com/questions/41040506/materialize-scroll-tbody
+https://stackoverflow.com/questions/23989463/how-to-set-tbody-height-with-overflow-scroll

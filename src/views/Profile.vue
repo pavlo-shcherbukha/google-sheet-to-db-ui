@@ -63,9 +63,9 @@ export default {
   mounted() {
     this.log('Вхід Profile.vue');
   },
-  beforeDestroy(){
-    this.log( 'Вихід: Profile.vue' );
-  },
+  //beforeUnmount(){
+  //  this.log( 'Вихід: Profile.vue' );
+  //},
   computed: {
     //...mapGetters(['info'])
     iFullName(){

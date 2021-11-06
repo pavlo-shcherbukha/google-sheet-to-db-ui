@@ -81,11 +81,11 @@ export default {
     
     this.log('Вхід Login.vue');
   },
-  beforeDestroy(){
+  //beforeDestroy(){
     
-    this.log( 'Вихід: Login.vue' );
+   // this.log( 'Вихід: Login.vue' );
 
-  },
+  //},
   methods: {
     log(msg){
       console.log(msg);
